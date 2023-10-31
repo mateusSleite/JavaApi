@@ -7,34 +7,34 @@ import java.io.Serial;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 
-
 @SpringBootApplication
 public class JavaApiApplication {
 
-	public static void main(String[] args) 
-	{
-		Exercicio1e2 exer1e2 = new Exercicio1e2();
-		exer1e2.exercicio1e2();
+	public static void main(String[] args) {
 
-		Exercicio3 exer3 = new Exercicio3();
-		exer3.exercicio3();
+		// Exercicio1e2 exer1e2 = new Exercicio1e2();
+		// exer1e2.exercicio1e2();
 
-		Exercicio4 exer4 = new Exercicio4();
-		exer4.exercicio4();
+		// Exercicio3 exer3 = new Exercicio3();
+		// exer3.exercicio3();
 
-		Exercicio5 exer5 = new Exercicio5();
-		exer5.exercicio5();
+		// Exercicio4 exer4 = new Exercicio4();
+		// exer4.exercicio4();
 
-		Funcionario func = new Funcionario("Mateus", 19, 13174048907l, 92902093);
-		Funcionario func2 = new Funcionario("Murilo", 25, 23174648907l, 92904095);
-		Usuario usu = new Usuario("Benhur", 18, 13178949808l, 8145);
-		Usuario usu2 = new Usuario("Renato", 19, 15178749708l, 7145);
+		// Exercicio5 exer5 = new Exercicio5();
+		// exer5.exercicio5();
 
-		System.out.println(MessageFormat.format("Nome:{0} Idade:{1} CPF:{2} EDV{3}" , func.nome, func.idade, func.cpf, func.edv));
-		System.out.println(MessageFormat.format("Nome:{0} Idade:{1} CPF:{2} EDV{3}" , func2.nome, func2.idade, func2.cpf, func2.edv));
+		// Exercicio6 exer6 = new Exercicio6();
+		// exer6.Exercicio6();
 
+		// Exercicio7 exer7 = new Exercicio7();
+		// exer7.exercicio7();
 
+		// Exercicio8 exer8 = new Exercicio8();
+		// exer8.exercicio8();
 
+		Exercicio9 exer9 = new Exercicio9();
+		exer9.exercicio9();
 
 	}
 

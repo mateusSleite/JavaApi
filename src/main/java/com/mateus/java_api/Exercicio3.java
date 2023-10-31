@@ -1,18 +1,19 @@
 package com.mateus.java_api;
+
 import java.util.Scanner;
 
 public class Exercicio3 {
-    float soma = 0;
-    float nota = 0;
-    float[] notasp = new float[3];
+	float soma = 0;
+	float nota = 0;
+	float[] notasp = new float[3];
 
-    public Exercicio3(){}
+	public Exercicio3() {
+	}
 
-    public void exercicio3()
-    {
-        Scanner ler = new Scanner(System.in);
+	public void exercicio3() {
+		Scanner ler = new Scanner(System.in);
 
-        System.out.print("\n");
+		System.out.print("\n");
 		System.out.println("Digite agora as outras 3 notas de outra matéria");
 
 		for (int i = 0; i < 3; i++) {
@@ -26,5 +27,5 @@ public class Exercicio3 {
 		}
 
 		System.out.println("A Soma foi " + soma);
-    }
+	}
 }

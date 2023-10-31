@@ -9,4 +9,7 @@ public class Funcionario extends Pessoas {
         this.edv = edv;
     }
 
+    public String toString() {
+        return "Nome:" + this.nome + " Idade:" + this.idade + " CPF:" + this.cpf + " EDV:" + this.edv;
+    }
 }

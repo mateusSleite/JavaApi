@@ -16,7 +16,7 @@ public class Exercicio4 {
         for (int x = 1000; x < 2000; x++) {
             if ((x % 11) == 5) {
                 System.out.print(x);
-                if(x != 1996 )
+                if (x != 1996)
                     System.out.print(", ");
             }
         }

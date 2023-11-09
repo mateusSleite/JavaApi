@@ -1,36 +1,33 @@
 package com.mateus.java_api.model;
 
+import java.util.List;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
-@Document("user")
-public class UserModel {
+@Document("company")
+public class CompanyModel {
     @Id
     private String id;
     private String name;
-    private short age;
-    private String password;
+    @DBRef
+    private UserModel idUser;
+    @DBRef
+    private List<UserModel> listUser;
 
-    public UserModel(String id, String name, short age) {
+    public CompanyModel(String id, String name) {
         this.id = id;
         this.name = name;
-        this.age = age;
     }
 
-    public UserModel(String name, short age) {
+    public CompanyModel(String name) {
         this.name = name;
-        this.age = age;
     }
 
-    public UserModel(String id) {
-        this.id = id;
-    }
-
-    public UserModel() {
+    public CompanyModel() {
     }
 }
